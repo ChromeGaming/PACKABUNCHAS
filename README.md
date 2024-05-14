@@ -19,7 +19,7 @@
   <img src="https://img.shields.io/github/last-commit/GameSphere-MultiPlayer/PACKABUNCHAS?style=for-the-badge" />
   </div>
 
-  # How to make a PR in a Project 🟢
+# How to make a PR in a Project 🟢
 
 If you are interested to contribute in this project how to start contribute
 <!-- in detail -->
