@@ -3899,3 +3899,18 @@ saveData("showTutorial", "true")
 */
 
 update()
+
+// Function to toggle the visibility of the gradient selector
+function toggleGradientSelector() {
+	const container = document.getElementById('gradientSelectorContainer');
+	container.style.display = container.style.display === 'none' || container.style.display === '' ? 'flex' : 'none';
+}
+
+// Function to apply the selected gradient
+function applyGradient() {
+	const color1 = document.getElementById('color1').value;
+	const color2 = document.getElementById('color2').value;
+	const direction = document.getElementById('direction').value;
+	document.querySelector('.content').style.background = `linear-gradient(${direction}, ${color1}, ${color2})`;
+	toggleGradientSelector(); // Close the selector container after applying the gradient
+}
