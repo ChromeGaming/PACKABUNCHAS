@@ -21,11 +21,9 @@
 
   # How to make a PR in a Project 🟢
 
-If you are interested to contribute in this project how to start contribute
+If you are interested in this project how to start contribute:
 <!-- in detail -->
-
 1. Fork the repo.
-
 2. After forking, clone the repo to your local machine.
 To clone the repo to your local machine, run the following command in your terminal:
     
@@ -79,7 +77,7 @@ ________________________________________________________________________________
 
 2. Make sure you are on the "Current Repository" view. If not, go to "File" and select "Add Local Repository" to add your repository.
 
-3. In the "Current Repository" view, ensure you are on the branch that you want to submit a pull request for. If you're not on the correct branch, use the "Branch" menu to switch to the correct branch.
+3. In the "Current Repository" view, ensure you are on the branch which you want to submit a pull request for. If you're not on the correct branch, use the "Branch" menu to switch to the correct branch.
 
 4. Once you're on the correct branch, make your changes and commit them to the branch. You can do this by clicking the "+" button in the upper-left corner of the GitHub Desktop window, making your changes, and then entering a commit message.
 
@@ -91,4 +89,4 @@ ________________________________________________________________________________
 
 8. Once you're satisfied with your pull request, click the "Create pull request" button to submit it.
 
-**Note:** In order to create a pull request, you must have a fork of the original repository in your GitHub account and you must have made the changes in that forked repository.
+**Note:** To create a pull request, you must have a fork of the original repository in your GitHub account and you must have made the changes in that forked repository.
