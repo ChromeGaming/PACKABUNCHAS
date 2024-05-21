@@ -1,4 +1,12 @@
-![Community](https://github.com/GameSphere-MultiPlayer/Physi-c-Tech/assets/98798977/e79af9da-814e-487e-8a9a-85947384d3b2)
+<div align="center">
+  <h1>PACKABUNCHAS</h1>
+</div>
+
+<div>
+  <img src="https://github.com/GameSphere-MultiPlayer/PACKABUNCHAS/assets/133582566/33ab5d09-bb16-4501-a74a-8c3a41c25f4b" alt="Gif" width="100%" Height="550"/>
+</div>
+
+<hr>
 
 # About Our Project 💻
 <div align="center">
@@ -31,6 +39,8 @@
 - <b>Drag Mode:</b> Provides additional strategic opportunities by allowing movement of already placed blocks.
 - <b>Interactive:</b> This game is completely user interavtive and friendly with amusing backgrounds, music, and features.
 <br><br>
+
+<hr>
 
   # How to make a PR in a Project 🟢
 
@@ -105,3 +115,55 @@ ________________________________________________________________________________
 8. Once you're satisfied with your pull request, click the "Create pull request" button to submit it.
 
 **Note:** In order to create a pull request, you must have a fork of the original repository in your GitHub account and you must have made the changes in that forked repository.
+
+<hr>
+
+<!-- Open Source Programs -->
+  <div>
+    <h2><img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Hand%20gestures/Flexed%20Biceps.png?raw=true" width="35" height="35" >Open Source Programs</h2>
+  </div>
+
+  This project is part of GirlScript Summer of Code. We welcome contributions from the community to help enhance PACKABUNCHAS.
+  
+![Community](https://github.com/GameSphere-MultiPlayer/Physi-c-Tech/assets/98798977/e79af9da-814e-487e-8a9a-85947384d3b2)
+
+<hr>
+
+<!-- Code of conduct -->
+<div>
+<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="35" height="35"> Code of Conduct</h2>
+</div>
+
+Please note that this project is released with a [Contributor Code of Conduct](.github/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+
+<hr>
+
+## Contact Us
+<div>
+<a href="https://www.linkedin.com/in/durgesh4993/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/durgesh4993/" height="30" width="40" /></a>
+</div>
+
+<hr>
+
+<!-- License -->
+<div>
+<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Page%20with%20Curl.png" width="35" height="35"> License</h2>
+</div>
+
+This project is licensed under the [MIT License](./LICENSE).
+
+<hr>
+
+ <!-- Cotributors -->
+<div>
+  <h2><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="35" height="35"> Contributors</h2>
+</div>
+
+Thank you for contributing to our project! Your support is invaluable in enhancing PACKABUNCHAS. 😊
+
+<center>
+<a href="https://github.com/GameSphere-MultiPlayer/PACKABUNCHAS/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=GameSphere-MultiPlayer/PACKABUNCHAS" />
+</a>
+</center>
+
