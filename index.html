@@ -24,14 +24,97 @@
             max-width: 100%;
             touch-action: none;
         }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom right, #FFEA7E, #FFA500); /* Default background gradient */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .content canvas {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%; /* Adjusting to full available height */
+            touch-action: none;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Gradient selector styles */
+        .gradient-selector-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0,0,0,0.4);
+            padding: 10px;
+            border-radius: 8px;
+            display: none;
+            flex-direction: column;
+            color: whitesmoke
+        }
+
+        .gradient-selector-container label,
+        .gradient-selector-container select,
+        .gradient-selector-container input {
+            margin: 5px 0;
+        }
+
+        .gradient-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        .gradient-button:focus {
+            outline: none;
+        }
+      
         #v{
                 border-radius: 0px 0px 25px 25px;
             }
+
     </style>
 </head>
 <body>
-<div class="c">
+<div class="content">
     <canvas id="v" width="1080" height="1920"></canvas>
+    <button class="gradient-button" onclick="toggleGradientSelector()">🎨</button>
+    <div class="gradient-selector-container" id="gradientSelectorContainer">
+        <label for="color1">Color 1:</label>
+        <input type="color" id="color1" name="color1" value="#FFEA7E">
+        <label for="color2">Color 2:</label>
+        <input type="color" id="color2" name="color2" value="#FFA500">
+        <label for="direction">Direction:</label>
+        <select id="direction" name="direction">
+            <option value="to bottom right">To Bottom Right</option>
+            <option value="to bottom left">To Bottom Left</option>
+            <option value="to top right">To Top Right</option>
+            <option value="to top left">To Top Left</option>
+            <option value="to bottom">To Bottom</option>
+            <option value="to top">To Top</option>
+            <option value="to left">To Left</option>
+            <option value="to right">To Right</option>
+        </select>
+        <button onclick="applyGradient()">Apply Gradient</button>
+    </div>
+
 </div>
 <script src="game.js"></script>
 </body>
