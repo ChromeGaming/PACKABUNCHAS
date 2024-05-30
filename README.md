@@ -30,7 +30,7 @@
 
   # Game Description 🎮
 
-  To every game enthusiast, here in PACKBUNCHES you are spacey, a group of space rangers specialised in packing and rescuing cretures around the galaxy! This is a stimulating brain game Built using core tech-stacks HTML and JavaScript that requires strategy and spatial intelligence. Players must strategically drag different shaped pieces onto the spaceship grid and aim to save the creatures! 🚀
+  To every game enthusiast, here in PACKABUNCHAS you are spacey, a group of space rangers specialised in packing and rescuing cretures around the galaxy! This is a stimulating brain game Built using core tech-stacks HTML and JavaScript that requires strategy and spatial intelligence. Players must strategically drag different shaped pieces onto the spaceship grid and aim to save the creatures! 🚀
 
   ### Features 📃
 
