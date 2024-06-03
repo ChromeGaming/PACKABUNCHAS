@@ -422,7 +422,19 @@ footer h2{
   margin-top: 5%;
   margin-left: 25%;
 }
+.foot-font div
+{
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+.foot-font div a
+{
+  text-align: center;
+  font-size: 75%;
+}
 .foot-font a:hover
 {
+  
   color: #94dec3;
 }
