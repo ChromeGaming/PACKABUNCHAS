@@ -59,18 +59,58 @@
             right: 10px;
             background-color: rgba(0,0,0,0.4);
             padding: 10px;
-            border-radius: 8px;
+            border-radius: 30px;
             display: none;
             flex-direction: column;
-            color: whitesmoke
+            color: whitesmoke;
+            border: 5px solid #5d4d54;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
         }
 
         .gradient-selector-container label,
         .gradient-selector-container select,
         .gradient-selector-container input {
             margin: 5px 0;
+            font-weight:800;
         }
 
+        .color_input {
+        width: 30%;
+        display: flex;
+        flex-direction: column ;
+        height: 30px;
+        border-radius: 6px;
+        background-color: #5d4d54;
+        color: #5d4d54;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s, background-color 0.3s;
+        }
+
+        .gradient-selector-container select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 0.5em;
+        /* Add padding for the text */
+        padding-left: 0.5em;
+        /* Add a border for the placeholder */
+        border: 4px solid #5d4d54;
+        border-radius: 6px;  
+        font-weight:520;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        border-radius: 10px;
+        color: #5d4d54; 
+        background-color: #dfdccfe2; 
+        }
+            
+        select:hover{
+            background-color: whitesmoke;
+        }
+       
         .gradient-button {
             position: absolute;
             top: 10px;
@@ -81,14 +121,25 @@
             cursor: pointer;
             font-size: 24px;
         }
-
+        
         .gradient-button:focus {
             outline: none;
         }
-      
+        
         #v{
-                border-radius: 0px 0px 25px 25px;
-            }
+            border-radius: 0px 0px 25px 25px;
+        }
+        
+        .gradient-selector-container button {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .gradbtn{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: 10px;
+            width: 200px;
+            height: 35px;
+        }
 
     </style>
 </head>
@@ -97,12 +148,13 @@
     <canvas id="v" width="1080" height="1920"></canvas>
     <button class="gradient-button" onclick="toggleGradientSelector()">🎨</button>
     <div class="gradient-selector-container" id="gradientSelectorContainer">
-        <label for="color1">Color 1:</label>
-        <input type="color" id="color1" name="color1" value="#FFEA7E">
-        <label for="color2">Color 2:</label>
-        <input type="color" id="color2" name="color2" value="#FFA500">
-        <label for="direction">Direction:</label>
-        <select id="direction" name="direction">
+        <label for="color1" class="color">Color 1:</label>
+        <input type="color" id="color1" name="color1" value="#FFEA7E" class="color_input">
+        <label for="color2" class="color">Color 2:</label>
+        <input type="color" id="color2" name="color2" value="#FFA500" class="color_input">
+        <label for="direction" class="direction">Direction:</label>
+        <select id="direction" class="custom-select" name="direction">
+            <option disabled selected value="select direction">Select direction</option>
             <option value="to bottom right">To Bottom Right</option>
             <option value="to bottom left">To Bottom Left</option>
             <option value="to top right">To Top Right</option>
@@ -112,7 +164,7 @@
             <option value="to left">To Left</option>
             <option value="to right">To Right</option>
         </select>
-        <button onclick="applyGradient()">Apply Gradient</button>
+        <button onclick="applyGradient()" class="gradbtn">Apply Gradient</button>
     </div>
 
 </div>
