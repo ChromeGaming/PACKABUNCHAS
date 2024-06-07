@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <title>PACKABUNCHAS</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .c {
             position: fixed;
@@ -30,7 +35,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(to bottom right, #FFEA7E, #FFA500); /* Default background gradient */
+            background: linear-gradient(to bottom right, #FFEA7E, #FFA500);
+            /* Default background gradient */
             overflow: hidden;
             position: relative;
         }
@@ -39,11 +45,13 @@
             width: auto;
             height: auto;
             max-width: 100%;
-            max-height: 100%; /* Adjusting to full available height */
+            max-height: 100%;
+            /* Adjusting to full available height */
             touch-action: none;
         }
 
-        body, html {
+        body,
+        html {
             margin: 0;
             padding: 0;
             height: 100%;
@@ -57,7 +65,7 @@
             position: absolute;
             top: 10px;
             right: 10px;
-            background-color: rgba(0,0,0,0.4);
+            background-color: rgba(0, 0, 0, 0.4);
             padding: 10px;
             border-radius: 8px;
             display: none;
@@ -71,51 +79,89 @@
             margin: 5px 0;
         }
 
-        .gradient-button {
+        .gradient-button:focus {
+            outline: none;
+        }
+
+        .controls-container {
             position: absolute;
             top: 10px;
             right: 10px;
+            display: flex;
+            align-items: center;
+            background-color:rgb(126, 198, 181);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .instructions {
+            cursor: pointer;
+            font-size: 24px;
+            color: black;
+            margin-right: 10px;
+        }
+
+        .gradient-button {
             padding: 10px;
             background-color: transparent;
             border: none;
             cursor: pointer;
             font-size: 24px;
+            color: whitesmoke;
         }
-
-        .gradient-button:focus {
-            outline: none;
+        .instructions-box {
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            display: none;
+            max-width: 300px;
+            z-index: 10;
         }
-      
-        #v{
-                border-radius: 0px 0px 25px 25px;
-            }
-
+        #v {
+            border-radius: 0px 0px 25px 25px;
+        }
     </style>
 </head>
 <body>
-<div class="content">
-    <canvas id="v" width="1080" height="1920"></canvas>
-    <button class="gradient-button" onclick="toggleGradientSelector()">🎨</button>
-    <div class="gradient-selector-container" id="gradientSelectorContainer">
-        <label for="color1">Color 1:</label>
-        <input type="color" id="color1" name="color1" value="#FFEA7E">
-        <label for="color2">Color 2:</label>
-        <input type="color" id="color2" name="color2" value="#FFA500">
-        <label for="direction">Direction:</label>
-        <select id="direction" name="direction">
-            <option value="to bottom right">To Bottom Right</option>
-            <option value="to bottom left">To Bottom Left</option>
-            <option value="to top right">To Top Right</option>
-            <option value="to top left">To Top Left</option>
-            <option value="to bottom">To Bottom</option>
-            <option value="to top">To Top</option>
-            <option value="to left">To Left</option>
-            <option value="to right">To Right</option>
-        </select>
-        <button onclick="applyGradient()">Apply Gradient</button>
+    <div class="content">
+        <canvas id="v" width="1080" height="1920"></canvas>
+        <div class="controls-container">
+            <div class="instructions"><i class="fa-regular fa-lightbulb"></i></div>
+            <button class="gradient-button" onclick="toggleGradientSelector()">🎨</button>
+        </div>
+        <div class="gradient-selector-container" id="gradientSelectorContainer">
+            <label for="color1">Color 1:</label>
+            <input type="color" id="color1" name="color1" value="#FFEA7E">
+            <label for="color2">Color 2:</label>
+            <input type="color" id="color2" name="color2" value="#FFA500">
+            <label for="direction">Direction:</label>
+            <select id="direction" name="direction">
+                <option value="to bottom right">To Bottom Right</option>
+                <option value="to bottom left">To Bottom Left</option>
+                <option value="to top right">To Top Right</option>
+                <option value="to top left">To Top Left</option>
+                <option value="to bottom">To Bottom</option>
+                <option value="to top">To Top</option>
+                <option value="to left">To Left</option>
+                <option value="to right">To Right</option>
+            </select>
+            <button onclick="applyGradient()">Apply Gradient</button>
+        </div>
+        <div class="instructions-box" id="instructionsBox">
+            <h2>Game Instructions</h2>
+            <p>Welcome to the game! Here are the instructions:</p>
+            <ul>
+                <li>Drag the puzzle pieces.</li>
+                <li>You can change thier direction by double clicking on it.</li>
+                <li>Adjust the puzzle pieces to completely occupy the given space.</li>
+                <li>Have fun!</li>
+            </ul>
+        </div>
     </div>
-
-</div>
-<script src="game.js"></script>
+    <script src="game.js"></script>
 </body>
 </html>

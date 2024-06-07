@@ -3914,3 +3914,10 @@ function applyGradient() {
 	document.querySelector('.content').style.background = `linear-gradient(${direction}, ${color1}, ${color2})`;
 	toggleGradientSelector(); // Close the selector container after applying the gradient
 }
+
+// Function to display instructions 
+
+document.querySelector('.instructions').addEventListener('click', () => {
+	const instructionsBox = document.getElementById('instructionsBox');
+	instructionsBox.style.display = instructionsBox.style.display === 'none' || instructionsBox.style.display === '' ? 'block' : 'none';
+});
