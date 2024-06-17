@@ -138,9 +138,12 @@ Please note that this project is released with a [Contributor Code of Conduct](.
 
 <hr>
 
-## Contact Us
+## Connect with us
 <div>
 <a href="https://www.linkedin.com/in/durgesh4993/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/durgesh4993/" height="30" width="40" /></a>
+<a href="https://twitter.com/durgesh4993" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="durgesh4993" height="30" width="40" /></a>
+<a href="https://dev.to/durgesh4993" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="durgesh4993" height="30" width="40" /></a>
+
 </div>
 
 <hr>
