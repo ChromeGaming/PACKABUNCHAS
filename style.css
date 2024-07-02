@@ -423,3 +423,29 @@ footer a:hover{
       }
       
 }
+
+
+.buton {
+    font-family: cursive;
+    font-size: large;
+    font-weight: bold;
+    color: aqua;
+    text-shadow: 2px 2px 4px rgb(255, 0, 238),-2px -2px 4px rgb(254, 0, 216);
+    background-color: #303134;
+    border-radius: 50%;
+  }
+  .buton:hover{
+    color: #00e7ff;
+  text-shadow: 0 0 10px #00e7ff,
+               0 0 20px #00e7ff,
+               0 0 30px #00e7ff,
+               0 0 40px #00e7ff,
+               0 0 70px #00e7ff,
+               0 0 80px #00e7ff,
+               0 0 100px #00e7ff,
+               0 0 150px #00e7ff;
+    background-color: black;
+  }
+  .buton:active{
+    transform: scale(0.8);
+  }
