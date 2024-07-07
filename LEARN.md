@@ -40,6 +40,9 @@ Open the `index.html` file in your web browser. You can then start dragging and 
 ### Who can I contact if I have issues or questions?
 Feel free to reach us through Discord channels, and our team or community members will assist you.
 
+### How can I report a bug or suggest an improvement?
+You can report bugs or suggest improvements by opening an issue on our GitHub repository. Please provide as much detail as possible, including steps to reproduce the issue and any error messages encountered.
+
 ---
 
 We hope you enjoy PACKBUNCHES and enhance your strategy and spatial intelligence skills. Happy gaming and coding! 
